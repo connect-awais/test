@@ -1,0 +1,25 @@
+.news-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.news-header p {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.news-header a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .news-header p {
+        font-size: 2rem;
+    }
+}

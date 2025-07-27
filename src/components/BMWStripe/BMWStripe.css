@@ -1,0 +1,36 @@
+.m-stripe {
+  display: flex;
+  height: 9px;
+  width: fit-content;
+  overflow: hidden;
+  position: fixed;
+  top: 0;               
+  left: 0;
+  z-index: 9999;  
+}
+
+.stripe {
+  width: 105px;
+  height: 100%;
+  transform: skewX(-35deg);
+  margin-left: -10px;
+}
+
+.blue-light {
+  background-color: #0066b1;
+}
+
+.blue-dark {
+  background-color: #003b71;
+}
+
+.red {
+  background-color: #c00000;
+}
+
+@media (max-width: 740px) {
+  .stripe {
+    width: 70px;
+  }
+  
+}

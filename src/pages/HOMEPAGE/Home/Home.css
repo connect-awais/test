@@ -1,0 +1,129 @@
+.home-content-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+    font-family: var(--font-family);
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+.home-text-section {
+    color: white;
+}
+
+.home-subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.home-button {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.home-button {
+    padding: 16px 25px;
+    background-color: #1c69d4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: #0653b6;
+}
+
+.home-media-section {
+    position: relative;
+}
+
+.home-image {
+    width: 850px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.home-video {
+    position: absolute;
+    width: 24%;
+    height: auto;
+    object-fit: contain;
+    bottom: -30%;
+    left: -15%;
+    z-index: 2;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1280px) {
+    .home-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .home-image {
+    width: 80vw;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .home-media-section {
+    padding-left: 10vw;
+    margin-bottom: 18vw;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .home-video {
+    width: 22vw;
+    max-width: 350px;
+    bottom: -30%;
+    left: -5%;
+  }
+
+.home-content-container {
+    padding-left: 50px;
+}
+}
+
+@media (max-width: 800px) {
+    .home-content-container {
+        padding: 25px;
+        margin: 0;
+        margin-top: 130px;
+    }
+
+    .home-video {
+        display: none;
+    }
+
+    .home-image {
+        width: 100vw;
+    }
+
+    .home-media-section {
+        padding: 0;
+        margin-bottom: 5vw;
+    }
+
+    .home-text-section {
+        padding:0 20px;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+}

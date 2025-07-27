@@ -1,0 +1,177 @@
+.more-bmw-section {
+    padding: 60px 120px;
+    color: white;
+    font-family: var(--font-family);
+    margin-top: 70px;
+}
+
+.more-bmw-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.more-bmw-text {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.more-bmw-text h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.more-bmw-text p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.swiper-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.more-bmw-swiper {
+    width: 100%;
+    overflow: visible;
+    /* Allow peeking of next slide */
+    position: relative;
+}
+
+.more-bmw-slide-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 2s ease, filter 2s ease;
+    cursor: pointer;
+}
+
+.more-bmw-slide-card:hover {
+     transform: scale(1.05); /* Zoom in */
+  filter: brightness(70%);
+}
+
+.more-bmw-slide-card video.more-bmw-video {
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border: none;
+}
+
+.more-bmw-slide-card img {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.more-bmw-slide-text {
+    padding-left: 10px;
+}
+
+.more-bmw-slide-text p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.more-bmw-slide-text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.custom-nav-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin-top: 20px;
+    /* Space below images */
+    width: 100%;
+}
+
+.nav-btn {
+    background-color: #1c69d4;
+    color: white;
+    border: none;
+    width: 48px;
+    height: 48px;
+    font-weight: lighter;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    padding-top: 2px;
+}
+
+.nav-btn:hover {
+    background-color: #0653b6;
+}
+
+.nav-btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (max-width: 1250px)
+{
+    .more-bmw-section {
+        padding: 60px 30px;
+    }
+
+    .more-bmw-wrapper {
+        flex-direction: column;
+    }
+
+    .swiper-container-wrapper {
+        width: 100%;
+    }
+
+    .more-bmw-text {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .more-bmw-slide-card img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.more-bmw-slide-card video.more-bmw-video {
+    width: 100%;
+    max-width: 100%;
+}
+
+.more-bmw-section {
+    padding: 60px 10px;
+    margin-top: 0;
+}
+
+.more-bmw-wrapper {
+    gap: 10px;
+}
+
+.more-bmw-text {
+    padding: 60px 20px;
+    margin-bottom: 0;
+}
+
+.more-bmw-text h2 {
+    font-size: 2.2rem;
+}
+
+}

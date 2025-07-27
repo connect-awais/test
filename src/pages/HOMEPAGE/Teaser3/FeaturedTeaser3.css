@@ -1,0 +1,79 @@
+.third-teaser-container {
+    color: white;
+    margin-top: 50px;
+}
+
+
+.third-teaser-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+
+.third-teaser-item-img img {
+    height: auto;
+    width: 100%;
+  max-width: 650px;
+    cursor: pointer;
+    transition: transform 2s ease, filter 2s ease;
+}
+
+.third-teaser-item-img img:hover,
+.third-teaser-video:hover,
+.third-hero-img img:hover {
+    transform: scale(1.05); 
+  filter: brightness(70%); 
+}
+
+.third-teaser-video {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 2s ease, filter 2s ease;
+}
+
+.third-teaser-item-txt {
+    padding: 20px 30px;
+}
+
+.third-teaser-item-txt h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.third-teaser-item-txt p {
+    font-size: 24px;
+}
+
+.third-teaser-hero {
+    padding: 50px 100px;
+}
+
+.third-hero-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 2s ease, filter 2s ease;
+}
+
+@media (max-width: 1300px)
+{
+    .third-teaser-grid {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .third-teaser-hero {
+        padding: 50px 0;
+    }
+}
