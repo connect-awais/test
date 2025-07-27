@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './Chatbot.css';
+import './ChatBot.css';
 import BmwLogo from '../../assets/images/logo-bmw-m.svg';
 
 export default function Chatbot() {
